@@ -32,7 +32,7 @@ bool MyApp::OnInit() {
 }
 
 MyFrame::MyFrame() :
-    wxFrame{NULL, wxID_ANY, "Hello World"}
+    wxFrame{nullptr, wxID_ANY, "Hello World"}
 {
     auto *menuFile = new wxMenu;
     menuFile->Append(ID_Hello, "&Hello...\tCtrl-H", "Help string");
