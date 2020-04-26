@@ -4,6 +4,10 @@ project(wx_hello)
 set(wxBUILD_SHARED FALSE)
 set(CMAKE_CXX_STANDARD 17)
 
+# Mac OSX Bundle Properties
+set(MACOSX_BUNDLE_NAME "My Application")
+set(MACOSX_BUNDLE_PACKAGE_NAME "rangeli.myapp")
+
 add_subdirectory(libs/wxWidgets)
 add_executable(wx_hello main.cpp)
 set_target_properties(wx_hello PROPERTIES
