@@ -1,35 +1,4 @@
-#include <iostream>
-#include <memory>
-#include <wx/wx.h>
-
-class MyApp : public wxApp
-{
-public:
-    bool OnInit() override;
-};
-
-class MyFrame : public wxFrame
-{
-public:
-    MyFrame();
-
-private:
-    void OnHello(wxCommandEvent& event);
-    void OnAbout(wxCommandEvent& event);
-};
-
-enum
-{
-    ID_Hello = 1
-};
-
-wxIMPLEMENT_APP(MyApp);
-
-bool MyApp::OnInit() {
-    auto frame = new MyFrame;
-    frame->Show(true);
-    return true;
-}
+#include "myframe.h"
 
 MyFrame::MyFrame() :
     wxFrame{nullptr, wxID_ANY, "Hello World"}
