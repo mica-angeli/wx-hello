@@ -15,6 +15,7 @@ file(GLOB SRC_FILES "src/*.cpp")
 
 add_executable(my_app ${SRC_FILES})
 set_target_properties(my_app PROPERTIES
+        OUTPUT_NAME ${MACOSX_BUNDLE_NAME}
         MACOSX_BUNDLE ON
         MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/MacOSXBundleInfo.plist.in)
 target_link_libraries(my_app net core base)
