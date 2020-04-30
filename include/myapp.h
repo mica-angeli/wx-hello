@@ -3,10 +3,9 @@
 
 #include <wx/wx.h>
 
-class MyApp : public wxApp
-{
+class MyApp : public wxApp {
 public:
-    bool OnInit() override;
+  bool OnInit() override;
 };
 
 #endif //MY_APP_MYAPP_H

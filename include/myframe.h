@@ -3,19 +3,18 @@
 
 #include <wx/wx.h>
 
-class MyFrame : public wxFrame
-{
+class MyFrame : public wxFrame {
 public:
-    MyFrame();
+  MyFrame();
 
 private:
-    enum
-    {
-        ID_Hello = 1
-    };
+  enum {
+    ID_Hello = 1
+  };
 
-    void OnHello(wxCommandEvent& event);
-    void OnAbout(wxCommandEvent& event);
+  void OnHello(wxCommandEvent &event);
+
+  void OnAbout(wxCommandEvent &event);
 };
 
 #endif //MY_APP_MYFRAME_H
